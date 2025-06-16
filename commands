@@ -1,1 +1,1 @@
-robot -d Output --loglevel TRACE app.robot
+robot -d Output --loglevel TRACE app.robot presentation.robot
