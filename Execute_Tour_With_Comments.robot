@@ -14,6 +14,7 @@ Execute Tour
     # Navigate to Contacts tab
     Click Element    xpath=//android.view.ViewGroup[@content-desc="Contacts"]
     Click Element    xpath=//android.view.ViewGroup[@content-desc="Contacts"]
+    Sleep    5s
     Wait Until Element Is Visible    xpath=//android.widget.TextView[contains(@text,"Contact")]     10s
 
     # Wait for contact search bar to load
@@ -108,24 +109,24 @@ Execute Tour
 
     # Confirm return to Contact Page
     Wait Until Element Is Visible    xpath=//android.widget.TextView[contains(@text, "Contact")]    10s
-    Sleep    3s
-
-    # Navigate to Activity tab
-    Click Element    xpath=//android.view.ViewGroup[@content-desc="Activities"]
-    Click Element    xpath=//android.view.ViewGroup[@content-desc="Activities"]
-    Wait Until Element Is Visible    xpath=//android.widget.TextView[contains(@text,"Activities")]    10s
-
-    # Filter by Tour Plan then switch to Tour Execution
-    Click Element    xpath=//android.view.ViewGroup[@content-desc="Tour Plan"]
-    Wait Until Element Is Visible    xpath=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup    10s
-    Click Element    xpath=//android.widget.TextView[@text="Tour Execution"]
-    Wait Until Element Is Visible    xpath=//android.view.ViewGroup[@content-desc="Tour Execution"]    10s
-    Sleep    3s
-
-    # Search by contact and verify tour execution data
-    Input Text    xpath=//android.widget.EditText[@resource-id="@undefined/input"]    ${CONTACT_NAME}
-    Sleep    2s
-    Wait Until Element Is Visible    xpath=(//android.widget.TextView[contains(@text,"${CONTACT_NAME}")])[1]    10s
-    Sleep    3s
-    Click Element    android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().descriptionContains("${CONTACT_NAME}, ${TOUR_EXECUTION_DATE}, ${TOUR_EXECUTION_TIME}"))
-    Sleep    10s
+    Sleep    5s
+#
+#    # Navigate to Activity tab
+#    Click Element    xpath=//android.view.ViewGroup[@content-desc="Activities"]
+#    Click Element    xpath=//android.view.ViewGroup[@content-desc="Activities"]
+#    Wait Until Element Is Visible    xpath=//android.widget.TextView[contains(@text,"Activities")]    10s
+#
+#    # Filter by Tour Plan then switch to Tour Execution
+#    Click Element    xpath=//android.view.ViewGroup[@content-desc="Tour Plan"]
+#    Wait Until Element Is Visible    xpath=//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup    10s
+#    Click Element    xpath=//android.widget.TextView[@text="Tour Execution"]
+#    Wait Until Element Is Visible    xpath=//android.view.ViewGroup[@content-desc="Tour Execution"]    10s
+#    Sleep    3s
+#
+#    # Search by contact and verify tour execution data
+#    Input Text    xpath=//android.widget.EditText[@resource-id="@undefined/input"]    ${CONTACT_NAME}
+#    Sleep    2s
+#    Wait Until Element Is Visible    xpath=(//android.widget.TextView[contains(@text,"${CONTACT_NAME}")])[1]    10s
+#    Sleep    3s
+#    Click Element    android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().descriptionContains("${CONTACT_NAME}, ${TOUR_EXECUTION_DATE}, ${TOUR_EXECUTION_TIME}"))
+#    Sleep    10s

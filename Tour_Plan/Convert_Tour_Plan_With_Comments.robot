@@ -15,7 +15,7 @@ ${Question_2}               How satisfied are you with the availability of our p
 ${Question_3}               What challenges do you face when recommending our products to patients?
 ${Answer_1}                 Rarely
 ${Answer_2}                 9
-${Answer_3}                 Lack of product Knowledge
+${Answer_3}                 Lack of patient awareness
 
 # Product-specific survey
 ${Product_question}         How effective do you find Miconazole for treating fungal infections?
@@ -26,8 +26,8 @@ ${S&T_question_1}           What factors influence your decision to choose Micon
 ${S&T_question_2}           How frequently do you prescribe Miconazole for ENT-related fungal infections compared to other antifungal medications?
 ${S&T_question_3}           What outcomes have you observed in patients using Miconazole for ENT fungal infections?
 ${S&T_answer_1}             Efficacy
-${S&T_answer_2}             9.5
-${S&T_answer_3}             Positive outcomes
+${S&T_answer_2}             9
+${S&T_answer_3}             Patients show significant symptom relief and improved recovery with minimal side effects.
 
 # Brand discussion details
 ${Use_Case}                 Miconazole Treatment for Otomycosis (Fungal Ear Infection)

@@ -1,1 +1,3 @@
 robot -d Output --loglevel TRACE app.robot presentation.robot
+
+robot -d Output --loglevel TRACE app.robot presentation.robot View_Presentation_With_Comments.robot Execute_Tour_With_Comments.robot Tour_Plan/Convert_Tour_Plan_With_Comments.robot
