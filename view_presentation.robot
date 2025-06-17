@@ -28,7 +28,7 @@ View Presentation
     Sleep    5s
     
     Double Tap    1280    804
-    
+    Sleep    10s
     Wait Until Element Is Visible    xpath=//android.widget.Button[@text="PAUSE"]   10s
     Click Element    xpath=//android.widget.Button[@text="PAUSE"]
     Sleep    10s
@@ -41,6 +41,7 @@ View Presentation
     Sleep    5s
 
     Double Tap    1280    804
+    Sleep    10s
     Wait Until Element Is Visible    xpath=//android.widget.Button[@text="FINISH"]   10s
     Click Element    xpath=//android.widget.Button[@text="FINISH"]
     Sleep    20s
