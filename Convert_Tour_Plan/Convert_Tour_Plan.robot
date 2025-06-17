@@ -210,3 +210,8 @@ Convert Tour Plan and execute Tour
     Sleep    3s
     Click Element    android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().descriptionContains("${CONTACT_NAME}, ${TOUR_EXECUTION_DATE}, ${TOUR_EXECUTION_TIME}"))
     Sleep    20s
+
+
+
+
+
