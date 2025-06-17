@@ -187,6 +187,9 @@ Convert Tour Plan and execute Tour
     # Save tour execution
     Click Element    xpath=//android.view.ViewGroup[@content-desc="Save"]
     Wait Until Element Is Visible    xpath=//android.widget.TextView[contains(@text, "Contact")]     10s
+    Sleep    5s
+
+View the Executed Tour
 
     #    Verify Tour Execution from the Activity Tab
     Click Element    xpath=//android.view.ViewGroup[@content-desc="Activities"]
