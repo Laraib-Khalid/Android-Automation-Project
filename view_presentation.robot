@@ -16,7 +16,7 @@ View Presentation
     Sleep    5s
     Click Element    xpath=//android.view.ViewGroup[@content-desc="${PRESENTATION_NAME}"]//following-sibling::android.view.ViewGroup[@content-desc="View"]
     Sleep    5s
-    
+
 #    Left Swipe
     Swipe    2300    804    2000    804    800
     Sleep    5s
@@ -26,12 +26,14 @@ View Presentation
     Swipe    300    804    500    804    800
 
     Sleep    5s
-    
+
+
+#    Double Tap Using Mobile Gesture    1280    804
     Double Tap    1280    804
     Sleep    10s
     Wait Until Element Is Visible    xpath=//android.widget.Button[@text="PAUSE"]   10s
     Click Element    xpath=//android.widget.Button[@text="PAUSE"]
-    Sleep    10s
+    Sleep    20s
     Wait Until Element Is Visible    xpath=//android.widget.Button[@text="RESUME"]    10s
     Click Element    xpath=//android.widget.Button[@text="RESUME"]
 
@@ -45,6 +47,3 @@ View Presentation
     Wait Until Element Is Visible    xpath=//android.widget.Button[@text="FINISH"]   10s
     Click Element    xpath=//android.widget.Button[@text="FINISH"]
     Sleep    20s
-
-
-

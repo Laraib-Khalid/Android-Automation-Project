@@ -1,6 +1,7 @@
 from robot.libraries.BuiltIn import BuiltIn
 from robot.api.deco import keyword
 
+
 class DoubleTapLibrary:
     @keyword("Double Tap")
     def double_tap(self, x, y):
