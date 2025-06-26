@@ -1,0 +1,67 @@
+✅ W3C Actions in Appium with Python
+📌 1. Tap (Click Gesture)
+
+        driver.execute_script("mobile: clickGesture", {
+            "x": 500,
+            "y": 1000
+        })
+
+
+📌 2. Long Press (Long Click Gesture)
+
+        driver.execute_script("mobile: longClickGesture", {
+            "x": 500,
+            "y": 1000,
+            "duration": 1000  # in milliseconds
+        })
+
+
+📌 3. Double Tap
+
+        driver.execute_script("mobile: doubleClickGesture", {
+            "x": 500,
+            "y": 1000
+        })
+
+
+📌 4. Swipe (Scroll Gesture)
+
+        driver.execute_script("mobile: swipeGesture", {
+            "left": 100,
+            "top": 500,
+            "width": 800,
+            "height": 1000,
+            "direction": "left",  # can be "left", "right", "up", "down"
+            "percent": 0.75       # how far to swipe (0.0 to 1.0)
+        })
+For swipeGesture, you must define the area (bounding box) where the swipe should happen.
+
+📌 5. Scroll (Scroll Gesture)
+
+        driver.execute_script("mobile: scrollGesture", {
+            "left": 100,
+            "top": 500,
+            "width": 800,
+            "height": 1000,
+            "direction": "down",
+            "percent": 0.7
+        })
+
+
+📌 6. Drag and Drop
+
+        driver.execute_script("mobile: dragGesture", {
+            "elementId": element.id,        # or use x/y instead of element
+            "endX": 800,
+            "endY": 600
+        })
+
+
+📌 W3C Mobile Gestures Summary Table
+Gesture  |	Command |	Use Case
+Tap     |	clickGesture    |	Simple tap/click
+Long Press  |	longClickGesture    |	Context menu, drag prep
+Double Tap  |	doubleClickGesture  |	Zoom toggle, special gestures
+Swipe   |	swipeGesture    |	Move left/right/up/down
+Scroll  |	scrollGesture   |	Scroll inside a view
+Drag & Drop |	dragGesture |	Move elements or reorder
