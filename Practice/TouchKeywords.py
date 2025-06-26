@@ -134,8 +134,8 @@ class TouchKeywords:
             }
         driver.execute_script("mobile: swipeGesture", args)
 
-    @keyword("Scroll Left")
-    def scroll_left(self, left, top, width, height, direction="right", percent=0.75):
+    @keyword("Swipe Left By 100 Percent")
+    def swipe_left_by_100_percent(self, left, top, width, height, direction="left", percent=0.5):
         _, driver = self._get_driver()
         args = {
             "left": int(left),
@@ -145,4 +145,6 @@ class TouchKeywords:
             "direction": direction,
             "percent": float(percent)
             }
-        driver.execute_script("mobile: scrollGesture", args)
+        driver.execute_script("mobile: swipeGesture", args)
+
+
